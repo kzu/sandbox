@@ -9,6 +9,8 @@ Unassigning #57
 
 Testing tags.s
 
+See [Resetting Visual Studio Experimental Instance](#resetting-visual-studio-experimental-instance)
+
 # Header that I'll link to
 
 some text
@@ -16,3 +18,5 @@ some text
 # Some other header
 
 Please see [Header that I'll link to](#header-that-ill-link-to).
+
+## Resetting Visual Studio Experimental Instance
