@@ -15,4 +15,4 @@ some text
 
 # Some other header
 
-Please see [Header that I'll link to]().
+Please see [Header that I'll link to](#header-that-ill-link-to).
