@@ -25,4 +25,4 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 ![Icon](https://raw.github.com/clariuslabs/clide/master/icon/64.png) Clide
 ==================
 
-<h1><img align="bottom" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> Clide</h1>
+<p align="center"><img align="top" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> Clide</p>
