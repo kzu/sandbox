@@ -23,4 +23,4 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 
 
 
-<h1><img style="float: right;width:64px;height:64px;vertical-align:middle" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> Clide</h1>
+<div><img style="width:64px;height:64px;vertical-align:middle" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> <span>Clide</span></div>
