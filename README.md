@@ -20,3 +20,7 @@ some text
 Please see [Header that I'll link to](#header-that-ill-link-to).
 
 ## Resetting Visual Studio Experimental Instance
+
+
+
+<h1><img style="float: right;width:64px;height:64px;vertical-align:middle" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> Clide</h1>
