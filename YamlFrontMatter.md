@@ -13,7 +13,7 @@ packages:
     version: 2.2.29
 ---
 ```json
-{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"Microsoft.Bcl","version":"1.1.10"},{"id":"Microsoft.Net.Http","version":"2.2.29"},{"id":"YamlDotNet","version":"3.8.0"},{"id":"Microsoft.Bcl.Build","version":"1.0.21"}]}
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"YamlDotNet","version":"3.8.0"},{"id":"Microsoft.Bcl","version":"1.1.10"}x,{"id":"Microsoft.Bcl.Build","version":"1.0.21"},{"id":"YamlDotNet","version":"3.8.0"}]}
 ```
 
 ```csharp
@@ -55,11 +55,11 @@ I've uploaded a sample workbook with YAML front-matter equivalent to this doc's 
 const string docUrl = "https://raw.githubusercontent.com/kzu/sandbox/master/YamlFrontMatter.md";
 ```
 
-The following code just reads the string between the start and end `---` in that doc, 
+The following helper code just reads the string between the start and end `---` in that doc, 
 in a way that avoids reading the whole doc just to get the front-matter: 
 
 ```csharp
-async static Task<string> ReadFrontMatter() {
+async Task<string> ReadFrontMatter() {
   using (var response = await new HttpClient ().GetAsync (docUrl)) {
     using (var stream = await response.Content.ReadAsStreamAsync ()) {
       using (var reader = new StreamReader (stream)) {
@@ -118,3 +118,30 @@ new Serializer (SerializationOptions.JsonCompatible).Serialize (writer, obj);
 var json = writer.ToString();
 ```
 
+We can load the Workbooks built-in JSON metadata to compare:
+
+```csharp
+async static Task<string> ReadJsonMetadata ()
+{
+  using (var response = await new HttpClient ().GetAsync (docUrl)) {
+    using (var stream = await response.Content.ReadAsStreamAsync ()) {
+      using (var reader = new StreamReader (stream)) {
+        var line = await reader.ReadLineAsync();
+        while (line != "```json") {
+          line = await reader.ReadLineAsync ();
+        }
+        // Return the next line, which is the metadata
+        return await reader.ReadLineAsync ();
+      }
+    }
+  }
+}
+```
+
+```csharp
+var original = await ReadJsonMetadata();
+```
+Compared to:
+```csharp
+var fromYaml = writer.ToString(); 
+```
