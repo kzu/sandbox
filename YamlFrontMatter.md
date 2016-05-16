@@ -36,6 +36,9 @@ distinct from the rest because it uses a totally different markup:
     title: Blogging Like a Hacker
     ---
 
+The front-matter isn't just more readable while editing the text file, it's also 
+rendered nicely by GitHub itself, as can be seen here https://github.com/kzu/sandbox/blob/master/YamlFrontMatter.md 
+
 The way to read it is pretty straightforward with the help of the `YamlDotNet` nuget
 package, which is actively developed and pretty stable.
 
