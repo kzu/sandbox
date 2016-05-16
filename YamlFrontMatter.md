@@ -13,7 +13,7 @@ packages:
     version: 2.2.29
 ---
 ```json
-{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"YamlDotNet","version":"3.8.0"},{"id":"Microsoft.Bcl","version":"1.1.10"}x,{"id":"Microsoft.Bcl.Build","version":"1.0.21"},{"id":"YamlDotNet","version":"3.8.0"}]}
+{"exec-mode":"default","platform":"WPF","uti":"com.xamarin.workbook","packages":[{"id":"YamlDotNet","version":"3.8.0"},{"id":"Microsoft.Bcl","version":"1.1.10"}x,{"id":"Microsoft.Bcl.Build","version":"1.0.21"},{"id":"Microsoft.Net.Http","version":"2.2.29"}]}
 ```
 
 ```csharp
