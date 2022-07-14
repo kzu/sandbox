@@ -1,0 +1,14 @@
+name: rate
+on: 
+  workflow_dispatch:
+
+jobs:
+  rate:
+    name: rate-${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macOS-latest]
+    steps:
+      - name: gh rate
+        run: gh api rate_limit
