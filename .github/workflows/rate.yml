@@ -14,4 +14,13 @@ jobs:
         os: [windows-latest, ubuntu-latest, macOS-latest]
     steps:
       - name: gh rate
-        run: gh api rate_limit
+        shell: pwsh
+        run: |
+          $rate = gh api rate_limit | convertfrom-json | select -expandproperty rate
+          if ($rate.remaining -lt 10) {
+              $wait = ($rate.reset - (Get-Date (Get-Date).ToUniversalTime() -UFormat %s))
+              echo "Waiting for $($wait / 1000) seconds for GH API rate to reset"
+              sleep ($rate.reset - (Get-Date (Get-Date).ToUniversalTime() -UFormat %s))
+              $rate = gh api rate_limit | convertfrom-json | select -expandproperty rate
+              echo "Rate limit has reset to $($rate.remaining)"
+          }
