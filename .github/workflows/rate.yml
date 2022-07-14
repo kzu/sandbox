@@ -2,6 +2,9 @@ name: rate
 on: 
   workflow_dispatch:
 
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   rate:
     name: rate-${{ matrix.os }}
