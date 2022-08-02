@@ -31,15 +31,12 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 -before
 
 <a href="https://github.com/KirillOsenkov">
-  <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
+  <img src="avatar-user.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
 </a>
 
-<a href="https://github.com/KirillOsenkov">
-  <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
+<a href="https://github.com/aws">
+  <img src="avatar.svg" alt="Amazon Web Services" title="Amazon Web Services">
 </a>
 
-<a href="https://github.com/KirillOsenkov">
-  <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
-</a>
 
 -after
