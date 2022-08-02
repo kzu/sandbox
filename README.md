@@ -25,8 +25,6 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 ![Icon](https://raw.github.com/clariuslabs/clide/master/icon/64.png) Clide
 ==================
 
-<img align="center" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> Clide
-==================
 
 -before
 
