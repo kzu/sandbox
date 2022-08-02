@@ -34,8 +34,12 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
   <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
 </a>
 
-[![Kirill Osenkov](avatar.svg)](https://github.com/KirillOsenkov)
-[![Kirill Osenkov](avatar.svg)](https://github.com/KirillOsenkov)
-[![Kirill Osenkov](avatar.svg)](https://github.com/KirillOsenkov)
+<a href="https://github.com/KirillOsenkov">
+  <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
+</a>
+
+<a href="https://github.com/KirillOsenkov">
+  <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
+</a>
 
 -after
