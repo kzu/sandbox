@@ -28,6 +28,6 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 <img align="center" src="https://raw.github.com/clariuslabs/clide/master/icon/64.png" /> Clide
 ==================
 
-<span>
-          <a class="avatar-group-item" data-hovercard-type="user" data-hovercard-url="/users/KirillOsenkov/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/KirillOsenkov"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/679326?s=70&amp;v=4" width="35" height="35" alt="@KirillOsenkov"></a>
-        </span>
+-before
+<img src="avatar.svg" width="35" height="35">
+-after
