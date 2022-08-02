@@ -18,14 +18,12 @@
                 border-radius: 50% !important;
             }
 			</style>
-            <a class="avatar-group-item" href="/KirillOsenkov">
-               <img class="avatar avatar-user" 
-                    src="https://avatars.githubusercontent.com/u/679326?s=35" 
-                    width="35" 
-                    height="35" 
-                    alt="@KirillOsenkov">
-                </img>
-            </a>
+            <img class="avatar avatar-user" 
+                src="https://avatars.githubusercontent.com/u/679326?s=35" 
+                width="35" 
+                height="35" 
+                alt="@KirillOsenkov">
+            </img>
 		</div>
 	</foreignObject>
 </svg>

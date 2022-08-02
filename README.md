@@ -29,5 +29,7 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 ==================
 
 -before
-<img src="avatar.svg" width="35" height="35">
+
+![Kirill Osenkov](avatar.svg)
+
 -after
