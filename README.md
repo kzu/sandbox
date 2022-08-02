@@ -30,6 +30,9 @@ Please see [Header that I'll link to](#header-that-ill-link-to).
 
 -before
 
-![Kirill Osenkov](avatar.svg)
+<a href="https://github.com/KirillOsenkov">
+  <img src="avatar.svg" alt="Kirill Osenkov" title="Kirill Osenkov">
+</a>
+
 
 -after
