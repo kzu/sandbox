@@ -4,7 +4,6 @@
 			<style>
             img {
                 border-style: none;
-                padding: 1px;
             }
             .avatar {
                 border-radius: 6px;
