@@ -8,7 +8,6 @@
             .avatar {
                 border-radius: 6px;
                 box-shadow: 0 0 0 1px lightgrey;
-                padding: 1px;
             }            
             .avatar-user {
                 border-radius: 50% !important;
