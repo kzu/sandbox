@@ -22,5 +22,5 @@ jobs:
           branch: markdown-includes
           delete-branch: true
           commit-message: +M▼ includes
-          title: "+M▼ includes"
+          title: +M▼ includes
           body: +M▼ includes
