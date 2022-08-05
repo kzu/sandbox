@@ -11,7 +11,9 @@ That was all included!
 
 # Sponsors 
 
-
-[![Sponsor this project](https://github.com/devlooped/sponsors/blob/main/sponsor.png)](https://github.com/sponsors/devlooped)
+<a href="https://github.com/sponsors/devlooped" title="Sponsor this project">
+  <img src="https://github.com/devlooped/sponsors/blob/main/sponsor.png" />
+</a>
 <br>
+
 [Learn more about GitHub Sponsors](https://github.com/sponsors)
