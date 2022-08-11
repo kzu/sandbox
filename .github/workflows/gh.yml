@@ -1,5 +1,5 @@
 name: gh
-on: [workflow_dispatch, issue, pull_request]
+on: [workflow_dispatch, issues, pull_request]
 
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
