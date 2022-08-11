@@ -1,0 +1,21 @@
+name: gh
+on: 
+  workflow_dispatch:
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  rate:
+    name: gh-${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macOS-latest]
+    steps:
+      - name: gh cli
+        shell: pwsh
+        run: |
+          echo "GH CLI is available everywhere!"
+          gh --version
+          gh auth status
