@@ -1,6 +1,5 @@
 name: gh
-on: 
-  workflow_dispatch:
+on: [workflow_dispatch, issue, pull_request]
 
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -19,3 +18,4 @@ jobs:
           echo "GH CLI is available everywhere!"
           gh --version
           gh auth status
+          echo "User: ${{ github.event.issue.user.node_id }}"
