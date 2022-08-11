@@ -18,4 +18,4 @@ jobs:
           echo "GH CLI is available everywhere!"
           gh --version
           gh auth status
-          echo "User: ${{ github.event.issue.user.node_id }}"
+          echo "User: ${{ github.event.issue.user.node_id || github.event.pull_request.user.node_id }}"
