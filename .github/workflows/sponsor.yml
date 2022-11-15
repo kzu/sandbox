@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       token: ${{ secrets.GH_TOKEN }}
-    if: ${{ env.token != '' && !endsWith(github.event.sender.login, '[bot]') && !endsWith(github.event.sender.login, 'bot') }}      
+    if: ${{ !endsWith(github.event.sender.login, '[bot]') && !endsWith(github.event.sender.login, 'bot') }}      
     steps:
       - name: 🤘 checkout
+        if: env.token != ''
         uses: actions/checkout@v2
           
       - name: ❤️ sponsor 
+        if: env.token != ''
         uses: devlooped/actions-sponsor@main
         with:
           token: ${{ env.token }}
