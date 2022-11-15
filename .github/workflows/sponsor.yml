@@ -5,13 +5,12 @@ on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
 
-env:
-  token: ${{ secrets.GH_TOKEN }}
-
 jobs:
   sponsor:
     runs-on: ubuntu-latest
-    if: ${{ env.token && !endsWith(github.event.sender.login, '[bot]') && !endsWith(github.event.sender.login, 'bot') }}      
+    env:
+      token: ${{ secrets.GH_TOKEN }}
+    if: ${{ env.token != '' && !endsWith(github.event.sender.login, '[bot]') && !endsWith(github.event.sender.login, 'bot') }}      
     steps:
       - name: 🤘 checkout
         uses: actions/checkout@v2
@@ -19,4 +18,4 @@ jobs:
       - name: ❤️ sponsor 
         uses: devlooped/actions-sponsor@main
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ env.token }}
