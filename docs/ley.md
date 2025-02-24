@@ -1,12 +1,13 @@
 ---
 Name: LEY 26.844
+Date: 2013-03-13
 Publication:
   Organization: Boletín Oficial
   Date: 2013-04-12
 Url: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
 ---
 <!-- 
-Timestamp: 1740156857009
+Timestamp: 1740156874509
 Publication:
   Organization: Boletín Oficial
   Date: 2013-04-12
@@ -19,7 +20,7 @@ Type: legislacion
 Kind: LEY
 Status: Vigente, de alcance general
 Date: 2013-03-13
-Modified: 20250221135417
+Modified: 20250221135434
 Terms:
 - CNTCP
 - CNTCP (Comisión Nacional de Trabajo en Casas Particulares)
