@@ -6,70 +6,6 @@ Publication:
   Date: 2013-04-12
 Url: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
 ---
-<!-- 
-Timestamp: 1740156874509
-Publication:
-  Organization: Boletín Oficial
-  Date: 2013-04-12
-Id: 123456789-0abc-defg-g23-85000scanyel
-Ref: LEY C 026844 2013 03 13
-Name: LEY 26.844
-Title: REGIMEN ESPECIAL DE CONTRATO DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES
-Summary: PERSONAL DE CASAS PARTICULARES-SERVICIO DOMESTICO-SERVICIO DOMESTICO CON RETIRO-SERVICIO DOMESTICO SIN RETIRO-CONTRATO DE TRABAJO-TRABAJO INFANTIL-ADOLESCENTES-TRIBUNAL DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES-COMISION NACIONAL DE TRABAJO EN CASAS PARTICULARES
-Type: legislacion
-Kind: LEY
-Status: Vigente, de alcance general
-Date: 2013-03-13
-Modified: 20250221135434
-Terms:
-- CNTCP
-- CNTCP (Comisión Nacional de Trabajo en Casas Particulares)
-- Comisión Nacional de Trabajo en Casas Particulares
-- Consejo de Trabajo Doméstico
-- Consejo de Trabajo Doméstico (tribunal de trabajo para el personal de casas particulares)
-- Consejo del Servicio Doméstico
-- Consejo del Servicio Doméstico (tribunal de trabajo para el personal de casas particulares)
-- Derecho civil
-- Derecho civil/persona humana/menores/adolescentes
-- Derecho laboral
-- Derecho laboral/actividades laborales/personal de casas particulares
-- Derecho laboral/actividades laborales/personal de casas particulares/Comisión Nacional de Trabajo en Casas Particulares
-- Derecho laboral/actividades laborales/personal de casas particulares/servicio doméstico con retiro
-- Derecho laboral/actividades laborales/personal de casas particulares/servicio doméstico sin retiro
-- Derecho laboral/actividades laborales/personal de casas particulares/tribunal de trabajo para el personal de casas particulares
-- Derecho laboral/contrato de trabajo
-- Derecho laboral/contrato de trabajo/trabajo de menores/trabajo infantil
-- actividades laborales
-- adolescentes
-- contrato de trabajo
-- contrato laboral
-- contrato laboral (contrato de trabajo)
-- derecho del trabajo
-- derecho del trabajo (Derecho laboral)
-- menores
-- menores de edad
-- menores de edad (menores)
-- persona humana
-- personal de casas particulares
-- personas de existencia visible
-- personas de existencia visible (persona humana)
-- personas físicas
-- personas físicas (persona humana)
-- servicio doméstico
-- servicio doméstico (personal de casas particulares)
-- servicio doméstico con cama
-- servicio doméstico con cama (servicio doméstico sin retiro)
-- servicio doméstico con retiro
-- servicio doméstico sin retiro
-- trabajadores de casas particulares
-- trabajadores de casas particulares (personal de casas particulares)
-- trabajo de menores
-- trabajo doméstico
-- trabajo doméstico (personal de casas particulares)
-- trabajo infantil
-- tribunal de trabajo para el personal de casas particulares
-Url: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
--->
 # REGIMEN ESPECIAL DE CONTRATO DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES
 
 ## Título I Disposiciones Generales.
@@ -722,3 +658,67 @@ ARTICULO 76. - Lo establecido en la presente ley será de aplicación a todas la
 
 <a id="77"></a>
 ARTICULO 77. - Comuníquese al Poder Ejecutivo nacional.
+<!-- 
+Timestamp: 1740156857009
+Publication:
+  Organization: Boletín Oficial
+  Date: 2013-04-12
+Id: 123456789-0abc-defg-g23-85000scanyel
+Ref: LEY C 026844 2013 03 13
+Name: LEY 26.844
+Title: REGIMEN ESPECIAL DE CONTRATO DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES
+Summary: PERSONAL DE CASAS PARTICULARES-SERVICIO DOMESTICO-SERVICIO DOMESTICO CON RETIRO-SERVICIO DOMESTICO SIN RETIRO-CONTRATO DE TRABAJO-TRABAJO INFANTIL-ADOLESCENTES-TRIBUNAL DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES-COMISION NACIONAL DE TRABAJO EN CASAS PARTICULARES
+Type: legislacion
+Kind: LEY
+Status: Vigente, de alcance general
+Date: 2013-03-13
+Modified: 20250221135417
+Terms:
+- CNTCP
+- CNTCP (Comisión Nacional de Trabajo en Casas Particulares)
+- Comisión Nacional de Trabajo en Casas Particulares
+- Consejo de Trabajo Doméstico
+- Consejo de Trabajo Doméstico (tribunal de trabajo para el personal de casas particulares)
+- Consejo del Servicio Doméstico
+- Consejo del Servicio Doméstico (tribunal de trabajo para el personal de casas particulares)
+- Derecho civil
+- Derecho civil/persona humana/menores/adolescentes
+- Derecho laboral
+- Derecho laboral/actividades laborales/personal de casas particulares
+- Derecho laboral/actividades laborales/personal de casas particulares/Comisión Nacional de Trabajo en Casas Particulares
+- Derecho laboral/actividades laborales/personal de casas particulares/servicio doméstico con retiro
+- Derecho laboral/actividades laborales/personal de casas particulares/servicio doméstico sin retiro
+- Derecho laboral/actividades laborales/personal de casas particulares/tribunal de trabajo para el personal de casas particulares
+- Derecho laboral/contrato de trabajo
+- Derecho laboral/contrato de trabajo/trabajo de menores/trabajo infantil
+- actividades laborales
+- adolescentes
+- contrato de trabajo
+- contrato laboral
+- contrato laboral (contrato de trabajo)
+- derecho del trabajo
+- derecho del trabajo (Derecho laboral)
+- menores
+- menores de edad
+- menores de edad (menores)
+- persona humana
+- personal de casas particulares
+- personas de existencia visible
+- personas de existencia visible (persona humana)
+- personas físicas
+- personas físicas (persona humana)
+- servicio doméstico
+- servicio doméstico (personal de casas particulares)
+- servicio doméstico con cama
+- servicio doméstico con cama (servicio doméstico sin retiro)
+- servicio doméstico con retiro
+- servicio doméstico sin retiro
+- trabajadores de casas particulares
+- trabajadores de casas particulares (personal de casas particulares)
+- trabajo de menores
+- trabajo doméstico
+- trabajo doméstico (personal de casas particulares)
+- trabajo infantil
+- tribunal de trabajo para el personal de casas particulares
+Url: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
+-->            
