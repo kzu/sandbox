@@ -1,4 +1,4 @@
---
+---
 Id: 123456789-0abc-defg-g51-87000scanyel
 Ref: LEY C 027781 2024 10 01
 Name: LEY 27.781
@@ -42,7 +42,7 @@ Terms:
 - registro de electores
 - registros electorales
 Url: https://www.saij.gob.ar/123456789-0abc-defg-g51-87000scanyel
---
+---
 
 # Modificaciones a la Ley 19.945. Código Electoral Nacional-Boleta Única Papel
 
