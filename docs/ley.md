@@ -1,5 +1,11 @@
 ---
-Timestamp: 1740156874509
+Name: LEY 26.844
+Publication:
+  Organization: Boletín Oficial
+  Date: 2013-04-12
+---
+<!-- 
+Timestamp: 1740156857009
 Publication:
   Organization: Boletín Oficial
   Date: 2013-04-12
@@ -12,7 +18,7 @@ Type: legislacion
 Kind: LEY
 Status: Vigente, de alcance general
 Date: 2013-03-13
-Modified: 20250221135434
+Modified: 20250221135417
 Terms:
 - CNTCP
 - CNTCP (Comisión Nacional de Trabajo en Casas Particulares)
@@ -61,8 +67,7 @@ Terms:
 - trabajo infantil
 - tribunal de trabajo para el personal de casas particulares
 Url: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
----
-
+-->
 # REGIMEN ESPECIAL DE CONTRATO DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES
 
 ## Título I Disposiciones Generales.
@@ -715,4 +720,3 @@ ARTICULO 76. - Lo establecido en la presente ley será de aplicación a todas la
 
 <a id="77"></a>
 ARTICULO 77. - Comuníquese al Poder Ejecutivo nacional.
-
