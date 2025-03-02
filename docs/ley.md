@@ -8,6 +8,7 @@ Publication:
 Web: https://www.saij.gob.ar/LNS0007682
 Data: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
 ID: LNS0007682
+Timestamp: 1736252653
 ---
 # REGIMEN ESPECIAL DE CONTRATO DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES
 
