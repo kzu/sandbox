@@ -1,10 +1,13 @@
 ---
-Name: LEY 26.844
 Date: 2013-03-13
+Name: LEY 26.844
 Publication:
   Organization: Boletín Oficial
   Date: 2013-04-12
-Url: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
+  
+Web: https://www.saij.gob.ar/LNS0007682
+Data: https://www.saij.gob.ar/123456789-0abc-defg-g23-85000scanyel
+ID: LNS0007682
 ---
 # REGIMEN ESPECIAL DE CONTRATO DE TRABAJO PARA EL PERSONAL DE CASAS PARTICULARES
 
