@@ -6,8 +6,9 @@ Publication:
   Date: 2025-02-24
 WebUrl: https://www.saij.gob.ar/LPX0006807
 DataUrl: https://www.saij.gob.ar/view-document?guid=123456789-0abc-defg-708-6000xvorpyel
-Id: LPX0006807
-Uuid: 123456789-0abc-defg-708-6000xvorpyel
+Alias: LPX0006807
+Id: 123456789-0abc-defg-708-6000xvorpyel
+Timestamp: 1740666806
 ---
 # Suspensión de la aplicación del régimen de elecciones primarias para el proceso electoral del año 2025
 
@@ -44,7 +45,7 @@ Art. 8°.- La presente Ley entra en vigencia a partir del día de su publicació
 <a id="9"></a>
 Art. 9º.- Comuníquese, etc.
 <!-- 
-Id: LPX0006807
+Alias: LPX0006807
 Ref: LEY X 006807 2025 02 21
 Name: LEY 6.807
 Terms:
@@ -60,7 +61,7 @@ Publication:
   Organization: Boletín Oficial
   Date: 2025-02-24
 WebUrl: https://www.saij.gob.ar/LPX0006807
-Uuid: 123456789-0abc-defg-708-6000xvorpyel
+Id: 123456789-0abc-defg-708-6000xvorpyel
 Title: Suspensión de la aplicación del régimen de elecciones primarias para el proceso electoral del año 2025
 Summary: Suspensión de la aplicación del régimen de elecciones primarias para el proceso electoral del año 2025.
 Type: Legislacion
