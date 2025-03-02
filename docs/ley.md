@@ -22,10 +22,13 @@ Resultan de aplicación al presente régimen las modalidades de contratación re
 
 Se establecen las siguientes modalidades de prestación:
 
+<a id="1.a"></a>
 a) Trabajadoras/es que presten tareas sin retiro para un mismo empleador y residan en el domicilio donde cumplen las mismas;
 
+<a id="1.b"></a>
 b) Trabajadoras/es que presten tareas con retiro para el mismo y único empleador;
 
+<a id="1.c"></a>
 c) Trabajadoras/es que presten tareas con retiro para distintos empleadores.
 
 ### Aplicabilidad.
