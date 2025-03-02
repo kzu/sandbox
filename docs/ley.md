@@ -22,13 +22,13 @@ Resultan de aplicación al presente régimen las modalidades de contratación re
 
 Se establecen las siguientes modalidades de prestación:
 
-<a id="1.a"></a>
+<a id="1a"></a>
 a) Trabajadoras/es que presten tareas sin retiro para un mismo empleador y residan en el domicilio donde cumplen las mismas;
 
-<a id="1.b"></a>
+<a id="1b"></a>
 b) Trabajadoras/es que presten tareas con retiro para el mismo y único empleador;
 
-<a id="1.c"></a>
+<a id="1c"></a>
 c) Trabajadoras/es que presten tareas con retiro para distintos empleadores.
 
 ### Aplicabilidad.
@@ -40,18 +40,25 @@ c) Trabajadoras/es que presten tareas con retiro para distintos empleadores.
 <a id="3"></a>
 ARTICULO 3° - No se considerará personal de casas particulares y en consecuencia quedarán excluidas del régimen especial:
 
+<a id="3a"></a>
 a) Las personas contratadas por personas jurídicas para la realización de las tareas a que se refiere la presente ley;
 
+<a id="3b"></a>
 b) Las personas emparentadas con el dueño de casa, tales como: padres, hijos, hermanos, nietos y/o las que las leyes o usos y costumbres consideren relacionadas en algún grado de parentesco o vínculo de convivencia no laboral con el empleador;
 
+<a id="3c"></a>
 c) Las personas que realicen tareas de cuidado y asistencia de personas enfermas o con discapacidad, cuando se trate de una prestación de carácter exclusivamente terapéutico o para la cual se exija contar con habilitaciones profesionales específicas;
 
+<a id="3d"></a>
 d) Las personas contratadas únicamente para conducir vehículos particulares de la familia y/o de la casa;
 
+<a id="3e"></a>
 e) Las personas que convivan en el alojamiento con el personal de casas particulares y que no presten servicios de igual naturaleza para el mismo empleador;
 
+<a id="3f"></a>
 f) Las personas que además de realizar tareas de índole domésticas deban prestar otros servicios ajenos a la casa particular u hogar familiar, con cualquier periodicidad, en actividades o empresas de su empleador; supuesto en el cual se presume la existencia de una única relación laboral ajena al régimen regulado por esta ley;
 
+<a id="3g"></a>
 g) Las personas empleadas por consorcios de propietarios conforme la ley 13.512, por clubes de campo, barrios privados u otros sistemas de condominio, para la realización de las tareas descriptas en el artículo 2° de la presente ley, en las respectivas unidades funcionales.
 
 ### Principios de interpretación y aplicación de la ley.
