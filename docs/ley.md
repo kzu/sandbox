@@ -30,8 +30,7 @@ c) Trabajadoras/es que presten tareas con retiro para distintos empleadores.
 
 ### Aplicabilidad.
 
-<a id="2"></a>
-ARTICULO 2° - Se considerará trabajo en casas particulares a toda prestación de servicios o ejecución de tareas de limpieza, de mantenimiento u otras actividades típicas del hogar. Se entenderá como tales también a la asistencia personal y acompañamiento prestados a los miembros de la familia o a quienes convivan en el mismo domicilio con el empleador, así como el cuidado no terapéutico de personas enfermas o con discapacidad.
+<a id="2">ARTICULO 2°</a> - Se considerará trabajo en casas particulares a toda prestación de servicios o ejecución de tareas de limpieza, de mantenimiento u otras actividades típicas del hogar. Se entenderá como tales también a la asistencia personal y acompañamiento prestados a los miembros de la familia o a quienes convivan en el mismo domicilio con el empleador, así como el cuidado no terapéutico de personas enfermas o con discapacidad.
 
 ### Exclusiones - Prohibiciones.
 
