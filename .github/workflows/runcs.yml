@@ -1,0 +1,28 @@
+﻿name: runcs
+on: 
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Message for Hello {message}
+        required: true
+        default: "World"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🤘 checkout
+        uses: actions/checkout@v4
+
+      - name: ⚙ dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.x
+          dotnet-quality: preview
+
+      - name: 🙏 run
+        run: .github/workflows/run.cs "${{ github.event.inputs.message }}"
