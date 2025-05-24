@@ -1,11 +1,6 @@
 ﻿name: runcs
 on: 
   workflow_dispatch:
-    inputs:
-      message:
-        description: Message for Hello {message}
-        required: true
-        default: "World"
 
 defaults:
   run:
