@@ -24,7 +24,15 @@ jobs:
             "double quoted"
             single'double"mixed
           script: |
+            #:package Humanizer@2.*
+            using Humanizer;
+
+            var now = DateTime.Now;
+            var start = new DateTime(now.Year, 1, 1);
+            var elapsed = now - start;
+
             Console.WriteLine(string.Join(" ", args));
+            Console.WriteLine($"It's been {elapsed.Humanize()} since new year");
 
       - name: 👀 output
         run: echo "${{ steps.runcs.outputs.output }}"
