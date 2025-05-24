@@ -1,6 +1,11 @@
 ﻿name: runcs
 on: 
   workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to compare to today, ISO format'
+        required: false
+        default: '2020-03-20'
 
 defaults:
   run:
@@ -27,12 +32,16 @@ jobs:
             #:package Humanizer@2.*
             using Humanizer;
 
-            var now = DateTime.Now;
-            var start = new DateTime(now.Year, 1, 1);
-            var elapsed = now - start;
-
             Console.WriteLine(string.Join(" ", args));
-            Console.WriteLine($"It's been {elapsed.Humanize()} since new year");
+            Console.WriteLine();
+
+            var date = DateTime.Parse("${{ github.event.inputs.date }}");
+            var elapsed = DateTime.Now - date;
+
+            if (elapsed.TotalSeconds > 0)
+                Console.WriteLine($"It's been {elapsed.Humanize()} since {date.Humanize()}");
+            else
+                Console.WriteLine($"Still {elapsed.Negate().Humanize()} until {date.Humanize()}");
 
       - name: 👀 output
         run: echo "${{ steps.runcs.outputs.output }}"
@@ -43,15 +52,7 @@ jobs:
         with:
           args: --arg1 "first arg" --arg2 second
           script: |
-            #:package Humanizer@2.*
-            using Humanizer;
-
-            var now = DateTime.Now;
-            var start = new DateTime(now.Year, 1, 1);
-            var elapsed = now - start;
-
             Console.WriteLine(string.Join(" ", args));
-            Console.WriteLine($"It's been {elapsed.Humanize()} since new year");
 
       - name: 👀 output
         run: echo "${{ steps.runcsargs.outputs.output }}"
