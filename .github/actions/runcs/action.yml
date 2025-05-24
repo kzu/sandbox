@@ -29,16 +29,25 @@ runs:
         dotnet-version: 10.x
         dotnet-quality: preview
 
+    - name: 📝 write script
+      if: ${{ !inputs.file }}
+      shell: bash
+      run: |
+        temp_file=$(mktemp --suffix=.cs)
+        cat > "$temp_file" << 'EOF'
+        ${{ inputs.script }}
+        EOF
+        echo "TEMP_CS_FILE=$temp_file" >> $GITHUB_ENV
+        echo "Script written to temporary file: $temp_file"
+
     - name: 🙏 dotnet run
       id: runcs
       shell: pwsh
       run: |
         $file = "${{ inputs.file }}"
         if (-not $file) {
-          # Write script to a temporary .cs file
-          $file = [System.IO.Path]::GetTempFileName() -replace '\.tmp$', '.cs'
-          "${{ inputs.script }}" | out-file -filepath $file -encoding utf8
-          write-output "Script written to temporary file: $file"
+          $file = $env:TEMP_CS_FILE
+          write-output "Using temporary script file: $file"
         }
 
         $input = "${{ inputs.args }}"
