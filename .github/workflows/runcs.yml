@@ -18,11 +18,18 @@ jobs:
       - name: 🤘 checkout
         uses: actions/checkout@v4
 
-      - name: ⚙ dotnet
-        uses: actions/setup-dotnet@v4
+      - name: ⚙ runcs
+        uses: ./.github/actions/runcs
+        id: runcs
         with:
-          dotnet-version: 10.x
-          dotnet-quality: preview
+          args: |
+            simple
+            hello world
+            it's quoted
+            "double quoted"
+            single'double"mixed
+          script: |
+            Console.WriteLine(string.Join(" ", args));
 
-      - name: 🙏 run
-        run: .github/workflows/run.cs "${{ github.event.inputs.message }}"
+      - name: 👀 output
+        run: echo "${{ steps.runcs.outputs.output }}"

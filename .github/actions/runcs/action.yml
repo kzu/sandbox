@@ -1,0 +1,83 @@
+name: ⚙ dotnet run C#
+author: Daniel Cazzulino
+description: Runs a dotnet C# file using .NET 10+
+
+inputs:
+  args:  
+    description: Arguments to pass to the C# file, potentially as multi-line text
+    required: false
+    default: ''
+  file:  
+    description: 'The C# file to run'
+    required: false
+    default: ''
+  script:  
+    description: 'The C# script to run'
+    required: false
+    default: ''
+outputs:
+  output:
+    description: 'Output from the C# execution'
+    value: ${{ steps.runcs.outputs.output }}
+
+runs:
+  using: composite
+  steps:
+    - name: ⚙ setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.x
+        dotnet-quality: preview
+
+    - name: 🙏 dotnet run
+      id: runcs
+      shell: pwsh
+      run: |
+        if (-not "${{ inputs.file }}" -and -not "${{ inputs.script }}") {
+          write-error "Error: Either 'file' or 'script' input must be provided."
+          exit 1
+        }
+        if ("${{ inputs.file }}" -and "${{ inputs.script }}") {
+          write-error "Error: Only one of 'file' or 'script' can be provided."
+          exit 1
+        }
+
+        $file = "${{ inputs.file }}"
+        if ("${{ inputs.script }}") {
+          # Write script to a temporary .cs file
+          $file = [System.IO.Path]::GetTempFileName() -replace '\.tmp$', '.cs'
+          "${{ inputs.script }}" | out-file -filepath $file -encoding utf8
+          write-output "Script written to temporary file: $file"
+        }
+
+        $input = "${{ inputs.args }}"
+        # Split on newlines (\n or \r\n), trim, and filter out empty lines
+        $array = $input -split '\r?\n' | foreach-object { $_.Trim() } | where-object { $_ }
+        
+        # Process each argument to handle spaces and quotes
+        $args = $array | foreach-object {
+          $arg = $_
+          # Escape existing quotes (both single and double) with a backslash
+          $arg = $arg -replace '"', '\"' -replace "'", "\'"
+          # If the argument contains spaces or quotes, wrap it in double quotes
+          if ($arg -match '\s|["'']') {
+            return "`"$arg`""
+          } else {
+            return $arg
+          }
+        }
+        
+        $args = $args -join ' '
+        write-output "Running: dotnet run $file $args"
+
+        $output = & dotnet run $file $args
+        write-output "Output: $output"
+        
+        # Clean up temporary file if script was used
+        if ("${{ inputs.script }}") {
+          remove-item -path $file -force
+          write-output "Cleaned up temporary file: $file"
+        }
+        
+        # Set the tool output as a step output
+        echo "output=$output" >> $env:GITHUB_OUTPUT
