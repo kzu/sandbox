@@ -18,7 +18,7 @@ jobs:
       - name: 🤘 checkout
         uses: actions/checkout@v4
 
-      - name: 🏃‍♂️ multi-line
+      - name: 🏃‍♂️ multiline args
         uses: ./.github/actions/runcs
         id: runcs
         with:
@@ -29,11 +29,29 @@ jobs:
             "double quoted"
             single'double"mixed
           script: |
+            Console.WriteLine(string.Join(" ", args));
+
+      - name: 👀 output
+        run: echo "${{ steps.runcs.outputs.output }}"
+
+      - name: 🏃‍♂️ singleline args
+        uses: ./.github/actions/runcs
+        id: runcsargs
+        with:
+          args: --arg1 "first arg" --arg2 second
+          script: |
+            Console.WriteLine(string.Join(" ", args));
+
+      - name: 👀 output
+        run: echo "${{ steps.runcsargs.outputs.output }}"
+
+      - name: 🏃‍♂️ c#
+        uses: ./.github/actions/runcs
+        id: runcalc
+        with:
+          script: |
             #:package Humanizer@2.*
             using Humanizer;
-
-            Console.WriteLine(string.Join(" ", args));
-            Console.WriteLine();
 
             var date = DateTime.Parse("${{ github.event.inputs.date }}");
             var elapsed = DateTime.Now - date;
@@ -44,15 +62,4 @@ jobs:
                 Console.WriteLine($"Still {elapsed.Negate().Humanize()} until {date.Humanize()}");
 
       - name: 👀 output
-        run: echo "${{ steps.runcs.outputs.output }}"
-
-      - name: 🏃‍♂️ single-line
-        uses: ./.github/actions/runcs
-        id: runcsargs
-        with:
-          args: --arg1 "first arg" --arg2 second
-          script: |
-            Console.WriteLine(string.Join(" ", args));
-
-      - name: 👀 output
-        run: echo "${{ steps.runcsargs.outputs.output }}"
+        run: echo "${{ steps.runcalc.outputs.output }}"
