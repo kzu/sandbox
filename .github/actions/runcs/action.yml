@@ -33,17 +33,8 @@ runs:
       id: runcs
       shell: pwsh
       run: |
-        if (-not "${{ inputs.file }}" -and -not "${{ inputs.script }}") {
-          write-error "Error: Either 'file' or 'script' input must be provided."
-          exit 1
-        }
-        if ("${{ inputs.file }}" -and "${{ inputs.script }}") {
-          write-error "Error: Only one of 'file' or 'script' can be provided."
-          exit 1
-        }
-
         $file = "${{ inputs.file }}"
-        if ("${{ inputs.script }}") {
+        if (-not $file) {
           # Write script to a temporary .cs file
           $file = [System.IO.Path]::GetTempFileName() -replace '\.tmp$', '.cs'
           "${{ inputs.script }}" | out-file -filepath $file -encoding utf8
@@ -74,7 +65,7 @@ runs:
         write-output "Output: $output"
         
         # Clean up temporary file if script was used
-        if ("${{ inputs.script }}") {
+        if (-not "${{ inputs.file }}") {
           remove-item -path $file -force
           write-output "Cleaned up temporary file: $file"
         }
