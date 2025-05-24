@@ -1,4 +1,4 @@
-name: runcs
+name: 🏃‍♂️ runcs
 author: Daniel Cazzulino
 description: Runs a C# file using .NET 10+
 
@@ -29,7 +29,7 @@ runs:
         dotnet-version: 10.x
         dotnet-quality: preview
 
-    - name: 📝 write script
+    - name: 📝 script
       id: temp-script
       if: ${{ !inputs.file }}
       shell: bash
@@ -41,7 +41,7 @@ runs:
         echo "cs=$temp_file" >> $GITHUB_OUTPUT
         echo "Script written to temporary file: $temp_file"
 
-    - name: 📝 write args
+    - name: 📝 args
       id: temp-args
       if: ${{ inputs.args }}
       shell: bash
@@ -53,7 +53,7 @@ runs:
         echo "args=$temp_args_file" >> $GITHUB_OUTPUT
         echo "Args written to temporary file: $temp_args_file"
 
-    - name: 🙏 dotnet run
+    - name: 🏃‍♂️ c#
       id: runcs
       shell: pwsh
       run: |

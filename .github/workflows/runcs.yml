@@ -13,7 +13,7 @@ jobs:
       - name: 🤘 checkout
         uses: actions/checkout@v4
 
-      - name: ⚙ runcs
+      - name: 🏃‍♂️ multi-line
         uses: ./.github/actions/runcs
         id: runcs
         with:
@@ -36,3 +36,22 @@ jobs:
 
       - name: 👀 output
         run: echo "${{ steps.runcs.outputs.output }}"
+
+      - name: 🏃‍♂️ single-line
+        uses: ./.github/actions/runcs
+        id: runcsargs
+        with:
+          args: --arg1 "first arg" --arg2 second
+          script: |
+            #:package Humanizer@2.*
+            using Humanizer;
+
+            var now = DateTime.Now;
+            var start = new DateTime(now.Year, 1, 1);
+            var elapsed = now - start;
+
+            Console.WriteLine(string.Join(" ", args));
+            Console.WriteLine($"It's been {elapsed.Humanize()} since new year");
+
+      - name: 👀 output
+        run: echo "${{ steps.runcsargs.outputs.output }}"
