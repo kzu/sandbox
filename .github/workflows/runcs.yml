@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 🏃‍♂️ multiline args
-        uses: devlooped/actions-runcs@1
+        uses: devlooped/actions-runcsharp@1
         id: runcs
         with:
           args: |
@@ -35,7 +35,7 @@ jobs:
         run: echo "${{ steps.runcs.outputs.output }}"
 
       - name: 🏃‍♂️ singleline args
-        uses: devlooped/actions-runcs@1
+        uses: devlooped/actions-runcsharp@1
         id: runcsargs
         with:
           args: --arg1 "first arg" --arg2 second
@@ -46,7 +46,7 @@ jobs:
         run: echo "${{ steps.runcsargs.outputs.output }}"
 
       - name: 🏃‍♂️ c#
-        uses: devlooped/actions-runcs@1
+        uses: devlooped/actions-runcsharp@1
         id: runcalc
         with:
           script: |
