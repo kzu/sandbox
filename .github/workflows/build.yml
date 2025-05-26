@@ -109,9 +109,10 @@ jobs:
         if: ${{ !hashFiles('.github/workflows/dotnet.json') }}
         uses: ./.github/actions/which-dotnet
 
-      - name: 🔎 dotnet
+      - name: 👀 dotnet
         id: dotnet
         run: |
+          # read ./.github/workflows/dotnet.json
           {
             echo 'versions<<EOF'
             echo "$(jq -r '.[]' ./.github/workflows/dotnet.json)"
