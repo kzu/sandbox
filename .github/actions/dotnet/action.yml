@@ -16,6 +16,7 @@ runs:
 
     - name: 👀 dotnet
       id: dotnet
+      shell: bash
       run: |
         # read ./.github/workflows/dotnet.json
         {
