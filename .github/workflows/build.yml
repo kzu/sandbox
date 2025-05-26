@@ -105,13 +105,14 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: 🔎 dotnet
+        id: dotnet
+        run: echo "versions=$(jq -r '.[] | join("\\n")' versions.json)" >> $GITHUB_OUTPUT
+
       - name: ⚙ dotnet
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: |
-            6.x
-            8.x
-            9.x
+          dotnet-version: ${{ steps.dotnet.outputs.versions }}
 
       - name: ✓ ensure format
         run: |
