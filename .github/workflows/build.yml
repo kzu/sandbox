@@ -111,7 +111,7 @@ jobs:
 
       - name: 🔎 dotnet
         id: dotnet
-        run: echo "versions=$(cat ./.github/workflows/dotnet.json)" >> $GITHUB_OUTPUT
+        run: echo "versions=$(cat ./.github/workflows/dotnet.json | tr -d '\n')" >> $GITHUB_OUTPUT
 
       - name: ⚙ dotnet
         uses: actions/setup-dotnet@v4
