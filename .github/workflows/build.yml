@@ -106,6 +106,9 @@ jobs:
           fetch-depth: 0
 
       - name: 🔎 dotnet
+        uses: ./.github/actions/which-dotnet
+
+      - name: 🔎 dotnet
         id: dotnet
         if: ${{ hashFiles('.github/workflows/dotnet.json') }}
         run: echo "versions=$(cat .github/workflows/dotnet.json)" >> $GITHUB_OUTPUT
