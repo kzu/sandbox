@@ -37,4 +37,10 @@ runs:
             }
         }
         # Write the versions to the output file
-        @($versions) | ConvertTo-Json | Out-File -FilePath {{ inputs.file }} -Encoding utf8 -Force
+        if ($versions.Count -eq 0) {
+          Write-Host "No .NET versions found in the repository."
+        } else {
+          Write-Host "Found .NET versions:"
+          Write-Host $($versions | ConvertTo-Json -AsArray)
+          $versions | ConvertTo-Json -AsArray | Out-File -FilePath {{ inputs.file }} -Encoding utf8 -Force
+        }
