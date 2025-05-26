@@ -18,6 +18,7 @@ runs:
     - name: 🔎 dotnet
       shell: pwsh
       run: |
+        # Locate all .NET project files in the repository
         $projFiles = Get-ChildItem -Recurse -Include *.*proj
         $versions = New-Object System.Collections.Generic.HashSet[string]
 
@@ -35,5 +36,5 @@ runs:
                 }
             }
         }
-
+        # Write the versions to the output file
         $versions | ConvertTo-Json | Out-File -FilePath {{ inputs.file }} -Encoding utf8 -Force
