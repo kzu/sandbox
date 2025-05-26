@@ -7,13 +7,14 @@ on:
 
 env:
   DOTNET_NOLOGO: true
+  GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
 
 defaults:
   run:
     shell: pwsh
 
 jobs:
-  sync:
+  run:
     runs-on: ubuntu-latest 
     steps:
       - name: 🤖 defaults
