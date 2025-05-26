@@ -14,7 +14,7 @@ defaults:
     shell: pwsh
 
 jobs:
-  run:
+  which-dotnet:
     runs-on: ubuntu-latest 
     steps:
       - name: 🤖 defaults
