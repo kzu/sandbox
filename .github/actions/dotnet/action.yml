@@ -1,0 +1,31 @@
+﻿name: ⚙ dotnet
+description: Setup .NET SDK versions
+
+inputs:
+  file:  
+    description: 'A JSON file containing an array of versions to install'
+    required: true
+    default: './.github/workflows/dotnet.json'
+
+runs:
+  using: composite
+  steps:
+    - name: 🤌 dotnet
+      if: ${{ !hashFiles('.github/workflows/dotnet.json') }}
+      uses: ./.github/actions/which-dotnet
+
+    - name: 👀 dotnet
+      id: dotnet
+      run: |
+        # read ./.github/workflows/dotnet.json
+        {
+          echo 'versions<<EOF'
+          echo "$(jq -r '.[]' ./.github/workflows/dotnet.json)"
+          echo 'EOF'
+        } >> $GITHUB_OUTPUT
+
+    - name: ⚙ dotnet
+      uses: actions/setup-dotnet@v4
+      if: steps.dotnet.outputs.versions != ''
+      with:
+        dotnet-version: ${{ steps.dotnet.outputs.versions }}
