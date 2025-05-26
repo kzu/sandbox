@@ -105,20 +105,24 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: 🔎 dotnet
+      - name: 🤌 dotnet
         if: ${{ !hashFiles('.github/workflows/dotnet.json') }}
         uses: ./.github/actions/which-dotnet
 
       - name: 🔎 dotnet
         id: dotnet
-        run: echo "versions=$(cat ./.github/workflows/dotnet.json | tr -d '\n')" >> $GITHUB_OUTPUT
+        run: |
+          {
+            echo 'versions<<EOF'
+            echo "$(cat ./.github/workflows/dotnet.json | tr -d '\n')"
+            echo 'EOF'
+          } >> $GITHUB_OUTPUT
 
       - name: ⚙ dotnet
         uses: actions/setup-dotnet@v4
         if: steps.dotnet.outputs.versions != ''
         with:
-          dotnet-version: |
-              ${{ join(fromJSON(steps.dotnet.outputs.versions), '\n') }}
+          dotnet-version: ${{ steps.dotnet.outputs.versions }}
 
       - name: ✓ ensure format
         run: |
