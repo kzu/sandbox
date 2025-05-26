@@ -37,4 +37,4 @@ runs:
             }
         }
         # Write the versions to the output file
-        $versions | ConvertTo-Json | Out-File -FilePath {{ inputs.file }} -Encoding utf8 -Force
+        @($versions) | ConvertTo-Json | Out-File -FilePath {{ inputs.file }} -Encoding utf8 -Force
