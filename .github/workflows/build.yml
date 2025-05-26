@@ -107,12 +107,14 @@ jobs:
 
       - name: 🔎 dotnet
         id: dotnet
-        run: echo "versions=$(jq -r '.[] | join("\\n")' versions.json)" >> $GITHUB_OUTPUT
+        if: ${{ hashFiles('.github/workflows/dotnet.json') }}
+        run: echo "versions=$(cat .github/workflows/dotnet.json)" >> $GITHUB_OUTPUT
 
       - name: ⚙ dotnet
         uses: actions/setup-dotnet@v4
+        if: steps.dotnet.outputs.versions != ''
         with:
-          dotnet-version: ${{ steps.dotnet.outputs.versions }}
+          dotnet-version: ${{ join(fromJSON(steps.dotnet.outputs.versions), '\n') }}
 
       - name: ✓ ensure format
         run: |
