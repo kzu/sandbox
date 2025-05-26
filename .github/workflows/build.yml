@@ -117,7 +117,7 @@ jobs:
         uses: actions/setup-dotnet@v4
         if: steps.dotnet.outputs.versions != ''
         with:
-          dotnet-version: ${{ join(fromJSON(steps.dotnet.outputs.versions), '\n') }}
+          dotnet-version: ${{ fromJSON(steps.dotnet.outputs.versions) }}
 
       - name: ✓ ensure format
         run: |
