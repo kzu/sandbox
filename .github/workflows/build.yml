@@ -111,7 +111,6 @@ jobs:
 
       - name: 🔎 dotnet
         id: dotnet
-        if: ${{ hashFiles('.github/workflows/dotnet.json') }}
         run: echo "versions=$(cat .github/workflows/dotnet.json)" >> $GITHUB_OUTPUT
 
       - name: ⚙ dotnet
