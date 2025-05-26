@@ -43,4 +43,5 @@ runs:
           Write-Host "Found .NET versions:"
           Write-Host $($versions | ConvertTo-Json -AsArray)
           $versions | ConvertTo-Json -AsArray | Out-File -FilePath {{ inputs.file }} -Encoding utf8 -Force
+          Write-Host "Versions written to {{ inputs.file }}"
         }
