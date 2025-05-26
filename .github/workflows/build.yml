@@ -106,6 +106,7 @@ jobs:
           fetch-depth: 0
 
       - name: 🔎 dotnet
+        if: ${{ !hashFiles('.github/workflows/dotnet.json') }}
         uses: ./.github/actions/which-dotnet
 
       - name: 🔎 dotnet
