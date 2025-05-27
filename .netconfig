@@ -1,7 +1,7 @@
 [file "sponsors.md"]
 	url = https://github.com/devlooped/sponsors/blob/main/sponsors.md
-	sha = 9cef22e1ebde745ec32963eb2677b70c86c4dcea
-	etag = 555eea0c0cd7014181709931752b99360405799579027d4dccf21975455561ab
+	sha = c8dbf7278d2e540a5e7c954dcf183809296c0250
+	etag = 8848f6c62243085c254452393e87607d89484f4fdcb66aaa06b226ad5c7e7120
 	weak
 [file ".github/workflows/includes.yml"]
 	url = https://github.com/devlooped/oss/blob/main/.github/workflows/includes.yml
@@ -67,8 +67,8 @@
 	weak
 [file ".github/workflows/publish.yml"]
 	url = https://github.com/devlooped/oss/blob/main/.github/workflows/publish.yml
-	sha = 931da830a361d69b419887a0edbb424517ca75fc
-	etag = 62a13b8b34b1b265cdc045bf7ea001dee7bdc184cba7abfea5fe77283cf419a6
+	sha = 08c70776943839f73dbea2e65355108747468508
+	etag = 722a2c7cb3a42bc24ca7fb48d2e9a336641ed0599418239e24efbafccf64bd50
 	weak
 [file ".github/workflows/triage.yml"]
 	url = https://github.com/devlooped/oss/blob/main/.github/workflows/triage.yml
