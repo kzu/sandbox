@@ -17,8 +17,8 @@ jobs:
       - name: 🤘 checkout
         uses: actions/checkout@v4
 
-      - name: 🔎 dotnet
-        uses: ./.github/actions/which-dotnet
+      - name: 🤌 dotnet
+        uses: devlooped/actions-which-dotnet@main
 
       - name: ✍ pull request
         uses: peter-evans/create-pull-request@v7
